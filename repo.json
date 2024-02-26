@@ -1,0 +1,8 @@
+{
+  "name": "codeiva4u cloudstream repository",
+  "description": "Hindi And Hindi Dubbed Movies",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hexated/builds/plugins.json"
+  ]
+}

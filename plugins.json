@@ -1,0 +1,63 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=movierulzhd.best&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/codeiva4u/cloudstream-extensions-hexated",
+        "fileSize": 27040,
+        "status": 1,
+        "language": "hi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "Movierulzhd",
+        "description": "Includes: Hdmovie2, Animesaga",
+        "url": "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hexated/builds/Movierulzhd.cs3",
+        "name": "Movierulzhd"
+    },
+    {
+       "iconUrl": "https://www.google.com/s2/favicons?domain=movierulzhd.best&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/codeiva4u/cloudstream-extensions-hexated",
+        "fileSize": 27040,
+        "status": 1,
+        "language": "hi",
+        "authors": [
+         	"Hexated"
+        
+		],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "PrmoviesProvider",
+        "description": "Includes: Watchomovies(NS*W), Max resolution is 1080p in both extensions.",
+        "url": "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hexated/builds/PrmoviesProvider.cs3",
+        "name": "PrmoviesProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=yomovies.rest&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/codeiva4u/cloudstream-extensions-hexated",
+        "fileSize": 15228,
+        "status": 1,
+        "language": "hi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "YomoviesProvider",
+        "description": "Includes: Watchomovies(NS*W), Max resolution is 1080p in both extensions.",
+        "url": "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hexated/builds/YomoviesProvider.cs3",
+        "name": "YomoviesProvider"
+    }
+]
