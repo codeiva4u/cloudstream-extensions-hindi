@@ -1,13 +1,11 @@
-// use an integer for version numbers
 version = 2
-
 
 cloudstream {
     language = "hi"
-    // All of these properties are optional, you can safely remove them
 
-     description = "Includes: Watchomovies(NS*W), Max resolution is 1080p in both extensions."
-     authors = listOf("Hexated")
+    description = "Contains Bharatiya Movies & Webseries from Indian Film Industry and Dubbed Hollywood content, Max Resolution is 1080p"
+
+    authors = listOf("hexated")
 
     /**
      * Status int as the following:
@@ -22,5 +20,5 @@ cloudstream {
         "Movie",
     )
 
-    iconUrl = "https://www.google.com/s2/favicons?domain=yomovies.rest&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=prmovies.green&sz=%size%"
 }
