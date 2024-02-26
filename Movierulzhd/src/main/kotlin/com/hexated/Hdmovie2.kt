@@ -16,9 +16,12 @@ class Hdmovie2 : Movierulzhd() {
     override var name = "Hdmovie2"
     override val mainPage = mainPageOf(
         "movies" to "Release Movies",
-        "trending" to "Most Trending",
+        "trending" to "New Trending Movies",
         "genre/hindi-dubbed" to "Hindi Dubbed Movies",
         "genre/bollywood" to "Bollywood Movies",
+        "trending" to "Trending",
+        "movies" to "Movies",
+        "genre/tv-series" to "TV Shows",
         "genre/netflix" to "Netflix",
         "genre/amazon" to "Amazon Prime",
         "genre/hotstar" to "Hotstar",
