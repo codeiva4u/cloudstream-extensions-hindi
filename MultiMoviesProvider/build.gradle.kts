@@ -25,5 +25,5 @@ cloudstream {
         "Movie",
         "TvSeries",
     )
-    iconUrl = "https://github.com/codeiva4u/cloudstream-extensions-hindi/blob/master/MultiMoviesProvider/icon.png"
+    iconUrl = "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hindi/master/MultiMoviesProvider/icon.png"
 }
