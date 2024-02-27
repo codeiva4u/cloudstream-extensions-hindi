@@ -6,8 +6,8 @@ cloudstream {
     // All of these properties are optional, you can safely remove them
 
     description = "Indian Multi-language HD Provider"
-    language = "ta"
-    authors = listOf("LikDev-256")
+    language = "hi"
+    authors = listOf("hexated")
 
     /**
     * Status int as the following:
@@ -25,5 +25,5 @@ cloudstream {
         "Movie",
         "TvSeries",
     )
-    iconUrl = "https://raw.githubusercontent.com/LikDev-256/likdev256-tamil-providers/master/MultiMoviesProvider/icon.png"
+    iconUrl = "https://github.com/codeiva4u/cloudstream-extensions-hindi/blob/master/MultiMoviesProvider/icon.png"
 }

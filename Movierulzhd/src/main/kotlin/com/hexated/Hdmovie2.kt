@@ -12,21 +12,24 @@ import org.jsoup.Jsoup
 
 class Hdmovie2 : Movierulzhd() {
 
-    override var mainUrl = "https://hdmovie2.tax"
+    override var mainUrl = "https://hdmovies4u.dev"
     override var name = "Hdmovie2"
+    override val hasMainPage = true
+    override var lang = "hi"
+    override val hasQuickSearch = true
+    override val hasDownloadSupport = true
     override val mainPage = mainPageOf(
-        "movies" to "Release Movies",
-        "trending" to "New Trending Movies",
-        "genre/hindi-dubbed" to "Hindi Dubbed Movies",
-        "genre/bollywood" to "Bollywood Movies",
-        "trending" to "Trending",
-        "movies" to "Movies",
-        "genre/tv-series" to "TV Shows",
-        "genre/netflix" to "Netflix",
-        "genre/amazon" to "Amazon Prime",
-        "genre/hotstar" to "Hotstar",
-        "genre/zee5-tv-series" to "Zee5",
-        "genre/jio-cinema" to "Jio Cinema",
+        "category/bollywood-1080p" to "Bollywood Movies",
+        "trending" to "Most Trending",
+        "hindi-dubbed" to "Hindi Dubbed Movies",
+        "category/bollywood-1080p" to "Bollywood Movies",
+        "category/south-hindi-dubbed-720p" to "Bollywood Movies",
+        "category/netflix" to "Netflix",
+        "category/amazon-prime-video" to "Amazon Prime Videos",
+        "category/disney-plus-hotstar" to " DISNEY+ HOTSTAR",
+        "genre/category/zee5" to "Zee5",
+        "category/sonyliv" to "SONYLIV",
+        "category/voot" to "Voot Original",
     )
 
     override suspend fun loadLinks(
