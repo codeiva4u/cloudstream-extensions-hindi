@@ -6,7 +6,7 @@ cloudstream {
     language = "hi"
     // All of these properties are optional, you can safely remove them
 
-    description = "Includes: Hdmovie2, Animesaga"
+    description = "Includes: MultiMoviesProvider"
     authors = listOf("Hexated")
 
     /**
