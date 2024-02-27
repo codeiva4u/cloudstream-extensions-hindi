@@ -3,27 +3,23 @@ version = 1
 
 
 cloudstream {
+    language = "hi"
     // All of these properties are optional, you can safely remove them
 
-    description = "Indian Multi-language HD Provider"
-    language = "hi"
-    authors = listOf("hexated")
+    description = "Includes: Hdmovie2, Animesaga"
+    authors = listOf("Hexated")
 
     /**
-    * Status int as the following:
-    * 0: Down
-    * 1: Ok
-    * 2: Slow
-    * 3: Beta only
-    * */
-    status = 0 // will be 3 if unspecified
-
-    // List of video source types. Users are able to filter for extensions in a given category.
-    // You can find a list of avaliable types here:
-    // https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-tv-type/index.html
+     * Status int as the following:
+     * 0: Down
+     * 1: Ok
+     * 2: Slow
+     * 3: Beta only
+     * */
+    status = 1 // will be 3 if unspecified
     tvTypes = listOf(
-        "Movie",
         "TvSeries",
+        "Movie",
     )
     iconUrl = "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hindi/master/MultiMoviesProvider/icon.png"
 }
