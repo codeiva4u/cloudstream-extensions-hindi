@@ -16,9 +16,9 @@ import java.net.URI
 
 class Movierulzhd : MainAPI() { // all providers must be an instance of MainAPI
     override var mainUrl = "https://multimovies.uno"
-    override var name = "MultiMovies"
+    override var name = "Hdmovie2"
     override val hasMainPage = true
-    override var lang = "ta"
+    override var lang = "hi"
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(
         TvType.Movie,
