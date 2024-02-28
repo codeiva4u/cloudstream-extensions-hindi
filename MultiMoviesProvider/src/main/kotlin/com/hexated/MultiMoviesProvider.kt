@@ -1,24 +1,20 @@
 package com.hexated
 
-import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.APIHolder.getCaptchaToken
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.*
 import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
-import com.lagradost.cloudstream3.extractors.Streamplay
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
 import org.jsoup.nodes.Element
 import com.lagradost.nicehttp.NiceResponse
 import okhttp3.FormBody
-import java.net.URI
 
 class MultiMoviesProvider : MainAPI() { // all providers must be an instance of MainAPI
     override var mainUrl = "https://multimovies.uno"
     override var name = "MultiMovies"
     override val hasMainPage = true
-    override var lang = "ta"
+    override var lang = "hi"
+    override val hasQuickSearch = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(
         TvType.Movie,
@@ -26,17 +22,20 @@ class MultiMoviesProvider : MainAPI() { // all providers must be an instance of 
     )
 
     override val mainPage = mainPageOf(
-        "$mainUrl/trending/" to "Trending",
-        "$mainUrl/movies/" to "Movies",
-        "$mainUrl/trending/" to "Tv Shows",
+        "$mainUrl/movies/" to "New Release Movies",
+        "$mainUrl/trending/" to "New Trending Movies",
         "$mainUrl/genre/bollywood-movies/" to "Bollywood Movies",
-        "$mainUrl/genre/hollywood/" to "Hollywood Movies",
-        "$mainUrl/genre/south-indian/" to "South Indian Movies",
-        "$mainUrl/genre/punjabi/" to "Punjabi Movies",
+        "$mainUrl/genre/hollywood/" to "Hollywood Hindi Movies",
+        "$mainUrl/genre/south-indian/" to "South Hindi Movies",
         "$mainUrl/genre/netflix/" to "Netfilx",
+        "$mainUrl/genre/amazon-prime/" to "Amazon Prime",
         "$mainUrl/genre/disney-hotstar/" to "Disney Hotstar",
         "$mainUrl/genre/sony-liv/" to "Sony Live",
-        "$mainUrl/genre/amazon-prime/" to "Amazon Prime",
+        "$mainUrl/genre/zee-5/" to "Zee5",
+        "$mainUrl/genre/jio-ott/" to "Jio Cinema",
+        "$mainUrl/genre/disney-channel/" to "Disney Channel",
+        "$mainUrl/genre/cartoon-network/" to "Cartoon Network",
+
     )
 
     override suspend fun getMainPage(
@@ -263,7 +262,7 @@ class MultiMoviesProvider : MainAPI() { // all providers must be an instance of 
             ).parsed<EmbedUrl>().embedUrl
         ).toString()
         url = urlRegex.find(url)?.groups?.get(1)?.value.toString()
-        loadStreamWish(url, subtitleCallback, callback)
+        loadStreamWish(url, callback)
 
         return true
     }
@@ -276,8 +275,8 @@ class MultiMoviesProvider : MainAPI() { // all providers must be an instance of 
 
     private suspend fun loadStreamWish(
         url: String,
-        subtitleCallback: (SubtitleFile) -> Unit,
-        callback: (ExtractorLink) -> Unit) {
+        callback: (ExtractorLink) -> Unit
+    ) {
 
         val doc = app.get(url).text
         val linkRegex = Regex("sources:.\\[\\{file:\"(.*?)\"")

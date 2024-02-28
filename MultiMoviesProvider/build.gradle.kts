@@ -1,12 +1,12 @@
 // use an integer for version numbers
-version = 3
+version = 1
 
 
 cloudstream {
     // All of these properties are optional, you can safely remove them
 
     description = "Indian Multi-language HD Provider"
-    language = "ta"
+    language = "hi"
     authors = listOf("hexated")
 
     /**
@@ -25,5 +25,5 @@ cloudstream {
         "Movie",
         "TvSeries",
     )
-    iconUrl = "https://raw.githubusercontent.com/codeiva4u/cloudstream-extensions-hindi/master/MultiMoviesProvider/icon.png"
+    iconUrl = "https://github.com/codeiva4u/cloudstream-extensions-hindi/blob/master/MultiMoviesProvider/icon.png"
 }
