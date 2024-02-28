@@ -9,7 +9,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.toJson
 import org.jsoup.nodes.Element
 import java.net.URI
 
-open class Movierulzhd : MainAPI() {
+open class Hdmovie2 : MainAPI() {
 
     override var mainUrl = "https://movierulzhd.cafe"
     var directUrl = ""
