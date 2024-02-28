@@ -1,4 +1,4 @@
-package com.likdev256
+package com.hexated
 
 import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
