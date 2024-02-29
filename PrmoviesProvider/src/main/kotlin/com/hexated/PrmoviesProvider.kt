@@ -10,7 +10,7 @@ import org.jsoup.nodes.Element
 
 class PrmoviesProvider : MainAPI() {
 
-    override var mainUrl = "https://prmovies.dog"
+    override var mainUrl = "https://hdmovies4u.dev"
     override var name = "Prmovies"
     override val hasMainPage = true
     override var lang = "hi"
