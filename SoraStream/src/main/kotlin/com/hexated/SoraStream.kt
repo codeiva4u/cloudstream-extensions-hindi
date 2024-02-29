@@ -67,7 +67,7 @@ open class SoraStream : TmdbProvider() {
         const val fdMoviesAPI = "https://freedrivemovie.com"
         const val zshowAPI = BuildConfig.ZSHOW_API
         const val netmoviesAPI = "https://netmovies.to"
-        const val hdmovies4uAPI = "https://hdmovies4u.day"
+        const val hdmovies4uAPI = "https://hdmovies4u.dev"
         const val vegaMoviesAPI = "https://vegamovies.ong"
         const val dotmoviesAPI = "https://dotmovies.one"
 
@@ -88,7 +88,7 @@ open class SoraStream : TmdbProvider() {
     }
 
     override val mainPage = mainPageOf(
-        "$tmdbAPI/trending/all/day?api_key=$apiKey&region=US" to "Trending",
+        "$tmdbAPI/category/south-hindi-dubbed-720p/?api_key=$apiKey&region=US" to "South",
         "$tmdbAPI/movie/popular?api_key=$apiKey&region=US" to "Popular Movies",
         "$tmdbAPI/tv/popular?api_key=$apiKey&region=US&with_original_language=en" to "Popular TV Shows",
         "$tmdbAPI/tv/airing_today?api_key=$apiKey&region=US&with_original_language=en" to "Airing Today TV Shows",
